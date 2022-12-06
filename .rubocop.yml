@@ -1,6 +1,9 @@
 AllCops:
   NewCops: enable
   SuggestExtensions: false
+  Include:
+    - lib/**/*.rb
+    - spec/**/*.rb
   Exclude:
     - spec/spec_helper.rb
 
