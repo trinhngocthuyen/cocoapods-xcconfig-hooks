@@ -3,6 +3,11 @@ use_frameworks!
 
 plugin "cocoapods-xcconfig-hooks"
 
+config_xcconfig_hooks(
+  hook_dir: "xcconfigs", # https://github.com/trinhngocthuyen/cocoapods-xcconfig-hooks/tree/main/examples/xcconfigs
+  aggregate_target_only: true
+)
+
 target "Example" do
   # Pods declaration goes here
 end
