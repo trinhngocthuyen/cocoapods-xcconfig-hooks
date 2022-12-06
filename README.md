@@ -1,6 +1,6 @@
 # cocoapods-xcconfig-hooks
 
-A description of cocoapods-xcconfig-hooks.
+CocoaPods plugin to hook xcconfig of CocoaPods targets.
 
 ## Installation
 
@@ -8,4 +8,4 @@ A description of cocoapods-xcconfig-hooks.
 
 ## Usage
 
-    $ pod spec hooks POD_NAME
+TBU
