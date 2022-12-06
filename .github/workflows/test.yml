@@ -7,13 +7,4 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Install
-        uses: trinhngocthuyen/gh-actions/rb/install@main
-        with:
-          bundle-install: true
-      - name: Makefile
-        uses: trinhngocthuyen/gh-actions/core/makefile@main
-        with:
-          targets: test
+    uses: trinhngocthuyen/gh-actions/.github/workflows/rb-test.yml@main

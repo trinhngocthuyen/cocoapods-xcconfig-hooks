@@ -4,13 +4,4 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Install
-        uses: trinhngocthuyen/gh-actions/rb/install@main
-        with:
-          bundle-install: true
-      - name: Makefile
-        uses: trinhngocthuyen/gh-actions/core/makefile@main
-        with:
-          targets: lint
+    uses: trinhngocthuyen/gh-actions/.github/workflows/rb-lint.yml@main
