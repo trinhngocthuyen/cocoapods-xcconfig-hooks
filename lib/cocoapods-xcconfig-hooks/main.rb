@@ -31,6 +31,7 @@ module Pod
 
         includes = [
           "__base__.xcconfig",
+          "#{config_name}.xcconfig",
           "#{target}.__base__.xcconfig",
           "#{target}.#{config_name}.xcconfig",
         ].map { |p| "#include? \"#{config.hook_dir}/#{p}\"" }
