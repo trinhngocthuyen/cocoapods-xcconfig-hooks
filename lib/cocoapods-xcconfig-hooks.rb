@@ -1,1 +1,1 @@
-require 'cocoapods-xcconfig-hooks/gem_version'
+require "cocoapods-xcconfig-hooks/gem_version"
