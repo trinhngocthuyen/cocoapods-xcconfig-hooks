@@ -1,0 +1,8 @@
+platform :ios, "14.0"
+use_frameworks!
+
+plugin "cocoapods-xcconfig-hooks"
+
+target "Example" do
+  # Pods declaration goes here
+end
