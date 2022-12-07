@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cocoapods-xcconfig-hooks (0.0.1)
+    cocoapods-xcconfig-hooks (0.0.2)
 
 GEM
   remote: https://rubygems.org/

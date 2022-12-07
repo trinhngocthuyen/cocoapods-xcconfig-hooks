@@ -12,7 +12,11 @@ module Pod
       end
 
       def hook_dir
-        @hook_dir ||= (dsl_config[:hook_dir] || Pathname(".xcconfigs"))
+        @hook_dir ||= begin
+          dir = Pathname(dsl_config[:hook_dir] || ".xcconfigs")
+          dir.mkpath
+          dir
+        end
       end
 
       def aggregate_targets_only?
