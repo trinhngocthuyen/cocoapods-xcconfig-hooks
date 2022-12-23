@@ -1,6 +1,6 @@
 # cocoapods-xcconfig-hooks
 
-[![Test](https://img.shields.io/github/workflow/status/trinhngocthuyen/cocoapods-xcconfig-hooks/test)](https://img.shields.io/github/workflow/status/trinhngocthuyen/cocoapods-xcconfig-hooks/test)
+[![Test](https://github.com/trinhngocthuyen/cocoapods-xcconfig-hooks/actions/workflows/test.yml/badge.svg)](https://github.com/trinhngocthuyen/cocoapods-xcconfig-hooks/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat&color=blue)](https://github.com/trinhngocthuyen/cocoapods-xcconfig-hooks/blob/main/LICENSE.txt)
 [![Gem](https://img.shields.io/gem/v/cocoapods-xcconfig-hooks.svg?style=flat&color=blue)](https://rubygems.org/gems/cocoapods-xcconfig-hooks)
 
