@@ -1,3 +1,4 @@
+require "fileutils"
 require "cocoapods-xcconfig-hooks/config"
 require "cocoapods-xcconfig-hooks/dsl"
 
@@ -20,6 +21,7 @@ module Pod
         sandbox.target_support_files_root.glob("*/*.xcconfig") do |path|
           prepend_includes(path)
         end
+        create_symlink_to_hook_dir
       end
 
       private
@@ -44,6 +46,14 @@ module Pod
 
         HEADER
         path.write(to_prepend + path.read)
+      end
+
+      def create_symlink_to_hook_dir
+        # Create symlink to hook dir (under Pods) so that xcconfigs can be included
+        # in a pod target's xcconfig without caring about absolute/relative paths
+        path = Pod::Config.instance.sandbox.root / config.hook_dir
+        FileUtils.rm_rf(path) if path.exist?
+        File.symlink(File.absolute_path(config.hook_dir), path)
       end
     end
   end
