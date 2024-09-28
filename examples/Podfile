@@ -1,11 +1,13 @@
 platform :ios, "14.0"
 use_frameworks!
 
+@checksum = "dummy-checksum-to-prevent-merge-conflicts"
+
 plugin "cocoapods-xcconfig-hooks"
 
 config_xcconfig_hooks(
   hook_dir: "xcconfigs", # https://github.com/trinhngocthuyen/cocoapods-xcconfig-hooks/tree/main/examples/xcconfigs
-  aggregate_target_only: true
+  aggregate_targets_only: true
 )
 
 target "Example" do

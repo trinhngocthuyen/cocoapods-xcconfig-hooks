@@ -36,7 +36,7 @@ The following table explains the parameters of the `config_xcconfig_hooks` metho
 | Parameter              | Type    | Default    | Description                                                                    |
 |------------------------|---------|------------|--------------------------------------------------------------------------------|
 | `hook_dir`               | string  | `.xcconfigs` | Path to the directory containing xcconfig files (relative to the project directory)                                |
-| `aggregate_targets_only` | boolean | `true`       | Whether to hook aggregate targets only (ex. Pods-App, Pods-AppUITests...) |
+| `aggregate_targets_only` | boolean | `false`       | Whether to hook aggregate targets only (ex. Pods-App, Pods-AppUITests...) |
 
 After pod installation, the settings defined in those xcconfig files should be hooked to the project.
 

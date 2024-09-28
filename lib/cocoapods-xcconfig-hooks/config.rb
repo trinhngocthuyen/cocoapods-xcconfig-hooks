@@ -20,10 +20,7 @@ module Pod
       end
 
       def aggregate_targets_only?
-        value = dsl_config[:aggregate_targets_only]
-        return value unless value.nil?
-
-        true
+        dsl_config[:aggregate_targets_only]
       end
     end
   end
